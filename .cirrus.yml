@@ -9,8 +9,5 @@ task:
     image: docker.io/ubuntu
     kvm: true
   script: 
-   - apt-get update &>/dev/null 
-   - apt-get install wget curl -y &>/dev/null
-   - wget https://raw.githubusercontent.com/freddyzuncover/dangdev/main/W11
-   - chmod +x *
-   - bash W11
+   - docker run --name ubuntu18.04 --privileged --shm-size 1g -d -p 5900:5900 -p 6080:6080 thuonghai2711/ubuntu-vnc:latest 
+   
