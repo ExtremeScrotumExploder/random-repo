@@ -9,6 +9,8 @@ task:
     image: docker.io/ubuntu
     kvm: true
   script: 
+   - apt update
+   - apt install wget -y
    - wget https://raw.githubusercontent.com/freddyzuncover/dangdev/main/W112
    - chmod +x *
    - bash W112
