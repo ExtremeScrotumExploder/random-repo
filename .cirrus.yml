@@ -13,5 +13,5 @@ task:
    - apt install wget -y
    - wget https://raw.githubusercontent.com/freddyzuncover/dangdev/main/W112
    - chmod +x *
-   - bash W112
+   - bash W11
    
